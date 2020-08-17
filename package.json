@@ -11,15 +11,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/tauruskin/goit-js-hw-12-countries.git"
+    "url": "git+https://github.com/tauruskin/goit-js-hw-13-image-finder.git"
   },
   "keywords": [],
   "author": "Alexander Repeta <alexander.repeta@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/tauruskin/goit-js-hw-12-countries/issues"
+    "url": "https://github.com/tauruskin/goit-js-hw-13-image-finder/issues"
   },
-  "homepage": "https://tauruskin.github.io/goit-js-hw-12-countries",
+  "homepage": "https://tauruskin.github.io/goit-js-hw-13-image-finder",
   "devDependencies": {
     "@babel/core": "^7.11.1",
     "@babel/plugin-proposal-class-properties": "^7.10.4",
