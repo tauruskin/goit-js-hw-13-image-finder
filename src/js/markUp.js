@@ -1,6 +1,6 @@
 import { refs } from './refs.js';
-import template from '../templates/template.hbs';
+import item from '../templates/item.hbs';
 
 export function markUp(data) {
-  refs.list.insertAdjacentHTML('beforeend', template(data));
+  refs.gallery.insertAdjacentHTML('beforeend', item(data));
 }

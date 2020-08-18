@@ -12,7 +12,7 @@ refs.loadMoreButton.addEventListener('click', handleClick);
 function handleInput(e) {
   apiService.resetPage();
   chanchedStateBtn();
-  refs.list.innerHTML = '';
+  refs.gallery.innerHTML = '';
   apiService.query = e.target.value;
   callFetch();
 }
