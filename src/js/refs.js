@@ -1,5 +1,5 @@
-export default {
-  search: document.querySelector('.search-form__input'),
-  gallery: document.querySelector('.gallery'),
+export const refs = {
+  form: document.querySelector('#search-form'),
+  list: document.querySelector('.gallery'),
   loadMoreButton: document.querySelector('.load-more-btn'),
 };
