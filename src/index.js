@@ -9,6 +9,8 @@ import debounce from 'lodash.debounce';
 refs.form.addEventListener('input', debounce(handleInput, 500));
 refs.loadMoreButton.addEventListener('click', handleClick);
 
+refs.loadMoreButton.addEventListener('click', debounce(scrollDown, 1500));
+
 function handleInput(e) {
   apiService.resetPage();
   chanchedStateBtn();
@@ -27,16 +29,18 @@ function callFetch() {
       .makeFetch()
       .then(data => {
         markUp(data);
-        if (apiService.pageNumber > 2) {
-          window.scrollTo({
-            top: document.documentElement.offsetHeight,
-            behavior: 'smooth',
-          });
-        }
-
         chanchedStateBtn(data);
       })
       .catch(err => console.log(err));
+  }
+}
+
+function scrollDown() {
+  if (apiService.pageNumber > 2) {
+    window.scrollTo({
+      top: document.documentElement.offsetHeight,
+      behavior: 'smooth',
+    });
   }
 }
 
